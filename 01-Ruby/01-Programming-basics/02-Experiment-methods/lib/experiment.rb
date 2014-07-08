@@ -11,7 +11,7 @@ def belongs_to?(a_string, a_word)
 end
 
 def replace(initial_string, old_letter, new_letter)
-  return initial_string.sub old_letter, new_letter
+  return initial_string.gsub old_letter, new_letter
 end
 
 def exactly_divide(an_integer, a_divider)
