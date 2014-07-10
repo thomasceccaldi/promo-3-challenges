@@ -8,7 +8,7 @@
 
 def shuffle_word(a_word)
 
-a_word.upcase.chars.to_a.shuffle
+a_word.upcase.chars.shuffle
 
 end
 
