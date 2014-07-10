@@ -31,20 +31,26 @@ def first_under(array, limit)
   array.detect { |i| i < limit }
 end
 
-
-def add_bang(array)
   # TODO: Take an array of strings and return a new array with "!" appended to each string.
   #       You should use Enumerable#map
+
+def add_bang(array)
+  array.map { |i| "#{i}!" }
 end
 
-def product(array)
   # TODO: Calculate the product of an array of numbers.
   #       You should use of Enumerable#reduce
+
+def product(array)
+  array.reduce(:x)
 end
 
-def sorted_pairs(array)
   # TODO: Reorganize an array into slices of 2 elements, and sort each slice alphabetically.
   #       You should make use of Enumerable#each_slice
+
+def sorted_pairs(array)
+  slices = array.each_slice(2)
+  slices.sort
 end
 
 
