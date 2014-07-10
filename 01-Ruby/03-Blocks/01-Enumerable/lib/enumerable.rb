@@ -1,5 +1,6 @@
   # TODO: computes the sum of elements at odd indices (1, 3, 5, 7, etc.)
   #       You should make use Enumerable#each_with_index
+
 def sum_odd_indexed(array)
   oddsum = 0
   array.each_with_index do |item, index|
@@ -50,7 +51,7 @@ end
 
 def sorted_pairs(array)
   slices = array.each_slice(2)
-  slices.sort
+  slices.each_slice {|i| i.sort}
 end
 
 
