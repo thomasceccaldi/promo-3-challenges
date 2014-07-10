@@ -21,13 +21,16 @@ end
   #       You should use Enumerable#reject
 
 def short_words(array, max_length)
-
+  array.reject { |i| i.length > max_length }
 end
 
-def first_under(array, limit)
   # TODO: Return the first number from an array that is less than limit.
   #       You should use Enumerable#find
+
+def first_under(array, limit)
+  array.detect { |i| i < limit }
 end
+
 
 def add_bang(array)
   # TODO: Take an array of strings and return a new array with "!" appended to each string.
