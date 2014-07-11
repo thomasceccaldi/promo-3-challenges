@@ -14,9 +14,6 @@ end
 
 def game_outcome(bank, score)
 
-  game_table = []
-  game_table << bank_score
-  game_table << score
-  return game_table
+  [bank, score]
 
 end
