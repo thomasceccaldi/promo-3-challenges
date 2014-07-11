@@ -1,7 +1,7 @@
 def array_to_hash(array)
 
 hash = {
-  array.each.to_sym => "value"
+  array.to_sym.each => "value"
 }
 
 return hash
