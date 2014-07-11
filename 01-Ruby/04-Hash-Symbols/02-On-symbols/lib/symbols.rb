@@ -33,8 +33,8 @@ end
 def me
   # TODO: return a Hash representing yourself, with keys such as age and name
   me = {
-    "age" => 32,
-    "name" => "Thomas"
+    :age => 32,
+    :name => "Thomas"
   }
 
 end
