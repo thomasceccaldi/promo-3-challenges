@@ -1,3 +1,9 @@
 def array_to_hash(array)
-  #TODO: implement the method :)
+
+hash = {
+  array.each.to_sym => "value"
+}
+
+return hash
+
 end
