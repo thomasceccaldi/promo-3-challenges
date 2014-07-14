@@ -3,6 +3,10 @@ require 'json'
 
 def generate_grid(grid_size)
   #TODO: generate random grid of letters
+
+p [*('A'..'Z')].sample(9).join
+
+
 end
 
 def run_game(attempt, grid, start_time, end_time)
