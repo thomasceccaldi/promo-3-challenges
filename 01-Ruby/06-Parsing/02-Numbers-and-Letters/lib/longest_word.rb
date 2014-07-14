@@ -21,22 +21,13 @@ def run_game(attempt, grid, start_time, end_time)
 
     if traduction
 
-      if attempt.size < grid
-
-        results[:score] = attempt.size + end_time - start_time + 3
+        results[:score] = end_time - start_time
         results[:message] = "well done"
         results[:translation] = traduction
-      else
-        results[:score] = attempt.size + end_time - start_time + 10
-        results[:message] = "well done"
-        results[:translation] = traduction
-
-      end
 
     else
       results[:score] = 0
       results[:message] = "not an english word"
-
     end
 
 
