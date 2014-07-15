@@ -3,7 +3,7 @@ def french_phone_number?(phone_number)
 
 clean_num = clean_phone_num(phone_number)
 
-  if /(0|\+33)[1-9]\d{8}$/ =~ clean_num.to_s
+  if /(0|\+33)6\d{8}$/ =~ clean_num.to_s
     true
   else
     false
