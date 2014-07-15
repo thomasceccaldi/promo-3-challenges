@@ -3,10 +3,10 @@ def french_phone_number?(phone_number)
 
 clean_num = clean_phone_num(phone_number)
 
-  if /(0|[+]33)6\d{8}/.match(clean_num) >= 0
-    return true
+  if /(0|\+33)[1-9]\d{8}$/ =~ clean_num.to_s
+    true
   else
-    return false
+    false
   end
 
 end
@@ -14,7 +14,7 @@ end
 
 def clean_phone_num(phone_number)
 
-    return "phone_number".gsub(/\W/,"")
+    phone_number.gsub(/[^\d\+]/, "")
 
 end
 
