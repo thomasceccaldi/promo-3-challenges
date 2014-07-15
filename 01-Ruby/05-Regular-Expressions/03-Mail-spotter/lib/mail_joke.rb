@@ -3,27 +3,29 @@
 def mail_joke(email)
   # TODO: Return a joke suited to the email provided
 
-  domain_name = email.split("@").delete_at(0)
+  domain_name = email.split("@")
 
   if email =~ /\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z/
 
-    case domain_name.to_s
+    case domain_name[1].to_s
 
-    when gmail.com
+    when "gmail.com"
       puts "sympa"
 
-    when hotmail.com
+    when "hotmail.com"
       puts "naze"
 
-    when yahoo.com
-      puts "parents"
+    when "yahoo.com"
+      puts "aren't you born before 1973?"
 
-    when aol.com
+    when "aol.com"
       puts "old"
 
     else
-      p "Well done boris, you're skilled and capable"
+      p "Sorry voyageurdufutur, we don't know how to judge '#{domain_name[1]}'"
     end
+  else
+    false
 
   end
 
