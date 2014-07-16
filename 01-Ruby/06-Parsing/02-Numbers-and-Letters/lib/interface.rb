@@ -2,7 +2,7 @@ require_relative "longest_word"
 
 puts "******** Welcome to the longest word-game !********"
 puts "Here is your grid :"
-grid = generate_grid(9)
+grid = generate_grid(12)
 puts grid.join(" ")
 puts "*****************************************************"
 
@@ -11,6 +11,7 @@ start_time = Time.now
 attempt = gets.chomp
 end_time = Time.now
 
+puts check_grid?(attempt, grid)
 puts "******** Now your result ********"
 
 result = run_game(attempt, grid, start_time, end_time)
