@@ -3,7 +3,6 @@
 def mail_joke(email)
   # TODO: Return a joke suited to the email provided
 
-
   if email =~ /\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z/
 
     domain_name = email.split("@")
