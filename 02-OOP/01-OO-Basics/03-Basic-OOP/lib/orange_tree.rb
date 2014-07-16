@@ -1,7 +1,7 @@
 class OrangeTree
   # TODO: Implement all the specs defined in the README.md :)
 
-  attr_accessor :height, :age, :fruits_produced, :dead
+  attr_reader :height, :age, :fruits, :dead
 
   def initialize
     @height = 0
@@ -19,19 +19,27 @@ class OrangeTree
       @height += 1
     end
 
-    if age >= 50 && rand(101-@age) == 0
-        @dead = true
+    if @age >= 50 && rand(101 - @age) == 0
+      @dead = true
     end
+
+    if @age <= 5
+      @fruits = 0
+    elsif @age >= 5 && @age <= 10
+      @fruits = 100
+
+    elsif @age > 10 && @age <= 15
+      @fruits = 200
+    end
+
   end
 
+  def dead?
+    @dead
+  end
 
   def pick_a_fruit!
-
     @fruits -= 1
   end
 
 end
-
-
-
-
