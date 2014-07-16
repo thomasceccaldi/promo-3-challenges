@@ -3,30 +3,32 @@
 def mail_joke(email)
   # TODO: Return a joke suited to the email provided
 
-  domain_name = email.split("@")
 
   if email =~ /\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z/
 
-    case domain_name[1].to_s
+    domain_name = email.split("@")
+
+    case domain_name[1]
 
     when "gmail.com"
-      puts "sympa"
+      return "#{domain_name[0]}, you're an average but modern person"
 
     when "hotmail.com"
-      puts "naze"
+      return "naze"
 
-    when "yahoo.com"
-      puts "aren't you born before 1973?"
+    when "live.com"
+      return "#{domain_name[0].gsub(/[.]/," ")}, aren't you born before 1973?"
 
-    when "aol.com"
-      puts "old"
+    when "lewagon.org"
+      return "Well done #{domain_name[0]}, you're skilled and capable"
 
     else
-      p "Sorry voyageurdufutur, we don't know how to judge '#{domain_name[1]}'"
+      return "Sorry voyageurdufutur, we don't know how to judge '#{domain_name[1]}'"
     end
-  else
-    false
 
+  else
+    fail ArgumentError, "Should be a string"
   end
 
 end
+
