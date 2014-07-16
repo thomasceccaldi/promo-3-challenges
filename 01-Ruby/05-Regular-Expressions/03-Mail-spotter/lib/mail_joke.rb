@@ -22,7 +22,7 @@ def mail_joke(email)
       return "Well done #{domain_name[0]}, you're skilled and capable"
 
     else
-      return "Sorry voyageurdufutur, we don't know how to judge '#{domain_name[1]}'"
+      return "Sorry #{domain_name[0]}, we don't know how to judge '#{domain_name[1]}'"
     end
 
   else
