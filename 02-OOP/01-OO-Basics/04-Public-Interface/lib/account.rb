@@ -66,7 +66,7 @@ class BankAccount
   def to_s
     # Method used when printing account object as string (also used for string interpolation)
     # TODO: Displays the account owner, the hidden iban and the position of the account
-    " owner: #{@name},  IBAN: #{iban}, Current amount: #{@position} euros"
+    " owner: #{@name}, IBAN: #{iban}, Current amount: #{@position} euros"
   end
 
   private
