@@ -23,11 +23,12 @@ def louchebemize(sentence)
 
   suffix = ["em", "é", "ji", "oc", "ic", "uche", "ès"]
 
-  if words.select { |word| word.size > 1 }
+  if words.select { |word| word.size > 2 }
 
-  long_words.map!{ |word| "#{word}#{suffix[rand(7)]}" }
+  words.map!{ |word| "#{word}#{suffix[rand(7)]}" }
+  end
 
-  p long_words
+  words
 
 end
 
