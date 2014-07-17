@@ -15,18 +15,16 @@ class Restaurant
 
   def rate(grade)
     @rates << grade
-    @average_rating = rates.sum.to_f / rates.size
+    @average_rating = rates.inject{ |sum, el| sum + el }.to_f / rates.size
+
   end
 
   #TODO: implement #filter_by_city and #rate methods
 
-  def Restaurant.filter_by_city(city_selected)
+  def self.filter_by_city(restos, city_selected)
 
-    restaurants_selected = []
+    restos.select { |restaurant| restaurant.city == city_selected }
 
-    if @city == "city_selected"
-      restaurants_selected << @name
-    end
   end
 
 end
