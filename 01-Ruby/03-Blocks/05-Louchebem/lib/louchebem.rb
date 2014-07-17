@@ -19,10 +19,17 @@
 def louchebemize(sentence)
 
   words = sentence.split
+  p words
 
+  suffix = ["em", "é", "ji", "oc", "ic", "uche", "ès"]
 
-  each.to_s.words[0] = l
+  if words.select { |word| word.size > 1 }
+
+  long_words.map!{ |word| "#{word}#{suffix[rand(7)]}" }
+
+  p long_words
 
 end
 
-louchebemize(hello blabla blabla)
+louchebemize("j j n j je suis la hahahah")
+
