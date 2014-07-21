@@ -34,7 +34,7 @@ def add_suffix(array)
   suffix = ["em", "é", "ji", "oc", "ic", "uche", "ès"]
 
   array.map! do |word|
-    if word.size > 1 && word.match(/\w[^, ]/)
+    if word.size > 1 && word.match(/\w[^,]/)
       "#{word}#{suffix[rand(7)]}"
     else
       "#{word}"
