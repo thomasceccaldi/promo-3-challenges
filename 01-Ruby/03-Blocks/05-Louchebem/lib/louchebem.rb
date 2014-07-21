@@ -19,16 +19,18 @@
 def louchebemize(sentence)
 
   words = sentence.split
-  p words
+
+  add_suffix(words)
+
+  p words.join(" ")
+
+end
+
+
+def add_suffix(array)
 
   suffix = ["em", "é", "ji", "oc", "ic", "uche", "ès"]
-
-  if words.select { |word| word.size > 2 }
-
-  words.map!{ |word| "#{word}#{suffix[rand(7)]}" }
-  end
-
-  words
+  array.map!{ |word| if word.size > 1 then "#{word}#{suffix[rand(7)]}" else "#{word}" end}
 
 end
 
