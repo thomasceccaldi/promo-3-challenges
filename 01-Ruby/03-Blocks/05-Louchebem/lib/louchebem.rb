@@ -33,11 +33,13 @@ def add_suffix(array)
 
   suffix = ["em", "é", "ji", "oc", "ic", "uche", "ès"]
 
-  array.map!{ |word|
-      if word.size > 1
-        then "#{word}#{suffix[rand(7)]}"
-      else "#{word}"
-      end }
+  array.map! do |word|
+    if word.size > 1 && word.match(/\w[^, ]/)
+      "#{word}#{suffix[rand(7)]}"
+    else
+      "#{word}"
+    end
+  end
 
 end
 
@@ -55,5 +57,5 @@ end
 
 
 
-louchebemize("j jnj boucher client , je suis la hahahah !! chat ; chat atout")
+louchebemize("j jnj boucher client, je suis la hahahah !! chat; chat atout")
 
