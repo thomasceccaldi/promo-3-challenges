@@ -20,6 +20,8 @@ def louchebemize(sentence)
 
   words = sentence.split
 
+  add_prefix(words)
+
   add_suffix(words)
 
   p words.join(" ")
@@ -30,9 +32,28 @@ end
 def add_suffix(array)
 
   suffix = ["em", "é", "ji", "oc", "ic", "uche", "ès"]
-  array.map!{ |word| if word.size > 1 then "#{word}#{suffix[rand(7)]}" else "#{word}" end}
+
+  array.map!{ |word|
+      if word.size > 1
+        then "#{word}#{suffix[rand(7)]}"
+      else "#{word}"
+      end }
 
 end
 
-louchebemize("j j n j je suis la hahahah")
+
+def add_prefix (array)
+
+  array.map!{ |word| word.gsub("chat", "latch") }
+
+  array.map!{ |word| word.gsub("atout", "latout") }
+
+  array.map!{ |word| word.gsub("fou", "louf") }
+
+end
+
+
+
+
+louchebemize("j jnj boucher client , je suis la hahahah !! chat ; chat atout")
 
