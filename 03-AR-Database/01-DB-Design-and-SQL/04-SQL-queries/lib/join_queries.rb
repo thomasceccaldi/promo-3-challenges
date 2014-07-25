@@ -20,7 +20,9 @@ def stats_on(db, category)
   #category
 
   array = db.execute( "SELECT * FROM Genre ;")
-  selection = array.select{ |x| x[1] == category }
+
+  selection = array.select{ |x| x[0] == category }
+
   hash["category"] = selection.first[1]
 
   #number_of_songs
@@ -36,19 +38,24 @@ def stats_on(db, category)
   hash["avg_length"] = selection2[category-1]
 
   return hash
+  p hash
 
 end
 
 def top_five_rock_artists(db)
   #TODO: return list of top 5 rock artists
 
-  #db.execute(
-  #  "SELECT * FROM Artist a
-
-  #  * FROM Genre
-
-  # ;")
-
+  db.execute(
+    "SELECT ar.Name,COUNT(*) as c
+                FROM Track t, Genre g, Artist ar, Album al
+                WHERE t.GenreId = g.GenreId
+                AND t.AlbumId = al.AlbumId
+                AND al.ArtistId = ar.ArtistId
+                AND g.Name = 'Rock'
+                GROUP BY ar.Name
+                ORDER BY c DESC
+                LIMIT 5;"
+ ).to_h
 
 end
 
