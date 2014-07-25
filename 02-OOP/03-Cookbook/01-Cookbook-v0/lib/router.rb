@@ -11,7 +11,7 @@ class Router
     puts "           --           "
     while @running
       display_tasks
-      action = gets.chomp.to_i
+      action = gets.chomp
       print `clear`
       case action
       when 1 then @controller.list
