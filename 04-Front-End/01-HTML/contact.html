@@ -1,0 +1,42 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+  <title>Connectez-vous svp</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li> <a href="http://localhost:8000/blog.html"> Home Page </a></li>
+        <li> <a href="http://localhost:8000/contact.html"> Contact </a></li>
+      </ul>
+  </nav>
+
+  <form action="/users/sign_in">
+    Ton login :<input type="text" name="email">
+    Ton password :<input type="password" name="password">
+    <input type="submit" value="VAS-Y">
+  </form>
+
+  <label>
+   Remember me <input type="checkbox" name="remember_me">
+  </label>
+
+  Vous êtes :
+  <select name="gender">
+
+    <option value="bouffon">un bouffon</option>
+    <option value="mec cool">un mec cool</option>
+  </select>
+
+  Parlez-moi de vous
+  <textarea name="bio" rows="3"></textarea>
+
+  Proposition de nom pour ce blog ?
+  <input name="bio" type="text">
+
+
+</body>
+</html>
+
+<!-- end of file -->
