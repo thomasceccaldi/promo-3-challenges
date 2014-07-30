@@ -10,10 +10,71 @@
   <link href="main.css" rel="stylesheet" type='text/css'>
 
 </head>
+
+<div>
 <body>
+
+
+  <h1>
+     Inscription à la super soirée
+  </h1>
+
   <div class="container">
 
     <!--YOUR FORM HERE-->
+
+    <form action="/users/form">
+      votre prénom <input type="text" name="name">
+      votre nom <input type="text" name="surname">
+    </form>
+
+    <h2>
+     Choix des menus
+    </h2>
+
+    Entrée
+    <select name="starter">
+      <option value="m">Soupe</option>
+      <option value="f">Tomate basilic</option>
+    </select>
+    Plat
+    <select name="starter">
+      <option value="m">Viande</option>
+      <option value="f">Poisson</option>
+    </select>
+    Vin
+    <select name="starter">
+      <option value="m">Rouge</option>
+      <option value="f">Blanc</option>
+    </select>
+
+    <h2>
+     Choix des workshops
+    </h2>
+
+    <h3>
+     Workshop 1 : Cupcake
+    </h3>
+
+    <iframe width="400" height="225" src="//www.youtube.com/embed/jrdYgY-UiCM" frameborder="0" allowfullscreen>
+    </iframe>
+
+    <label>
+      Je participe
+      <input type="checkbox" name="workshop_1">
+    </label>
+
+    <h3>
+     Workshop 2 : Epilation
+    </h3>
+
+    <iframe width="400" height="225" src="//www.youtube.com/embed/oEqLApFLEzA" frameborder="0" allowfullscreen>
+    </iframe>
+
+    <label>
+      Je participe
+      <input type="checkbox" name="workshop_2">
+    </label>
 
   </div>
 </body>

@@ -1,6 +1,18 @@
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 840px;
+  font: 'Helvetica';
+  color: grey;
 }
 
-/*Add some CSS rules to design your form */ 
+/*Add some CSS rules to design your form */
+
+h1 {
+
+}
+
+h2 {
+ width: 400px;
+ height: 100px ;
+ border: 1px, solid, grey;
+}
