@@ -12,17 +12,8 @@ puts 'Seeding database...'
 # 1. create fake users
 # 2. Scrape news from https://news.ycombinator.com/ and associate posts to your existing users
 
-User.create(
-  name: Faker::Name.name,
-  email: Faker::Internet.email)
+10.times { User.create( name: Faker::Name.name, email: Faker::Internet.email) }
 
+url = "https://news.ycombinator.com/"
 
-data_origin = ENV['from'] || 'local file'
-data_url    = 'https://news.ycombinator.com/'
-
-
-puts "Seeding data for Rock en Seine, based on #{data_url}. Let's rock the party!"
-puts '-'*50
-
-
-
+data = Nokogiri::HTML(open(url))
