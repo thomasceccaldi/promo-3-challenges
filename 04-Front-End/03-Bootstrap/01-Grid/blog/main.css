@@ -1,13 +1,18 @@
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
   width: 940px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+
+.posted {
+  color: #999999;
 }
 
 header ul
 {
 	list-style-type:none;
-	margin: 0;  
+	margin: 0;
 	padding:0;
 	text-align: center;
 }
@@ -36,5 +41,11 @@ footer{
 h1{
 	text-align: center;
 	font-size: 50px;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+
 }
 
