@@ -1,0 +1,81 @@
+.container {
+  width: 860px;
+	font-family: "HelveticaNeue-Light";
+}
+
+body {
+  background-image: url("http://www.iceme.fr/images/grid.jpg");
+}
+
+
+.navbar {
+  margin: 0;
+}
+
+
+.contactgrid {
+  padding-top: 100px;
+  margin-bottom: 70px;
+}
+
+.contactgrid h1{
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #41B3FF;
+  border-color: #41B3FF;
+}
+
+
+.wrapper h1 {
+
+  font-size: 3em;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .4);
+
+}
+
+
+.wrapper {
+  background-image: url('http://37.media.tumblr.com/cfd678f87f35e66de5aa4c0253de89d7/tumblr_mqb7ft3YC41qbtlogo1_1280.jpg');
+  height: 800px;
+  background-size: cover;
+  padding-top: 100px;
+  margin-bottom: 70px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 20px rgba(0, 0, 0, .4);
+}
+
+.signup {
+
+  text-align: center;
+  margin-bottom: 4em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+.footersite {
+  background-color: #222;
+  color: #aaaaaa;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.btn-primary:hover {
+  background-color: #193184;
+  border-color: #193184;
+}
+
+
+.footersite a {
+  color: #cccccc;
+}
+
+.footersite a:hover {
+  color: #41B3FF;
+}
+
+.footersite a {
+  font-size: 24px;
+
