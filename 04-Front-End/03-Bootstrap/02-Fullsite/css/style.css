@@ -1,5 +1,4 @@
 .container {
-  width: 860px;
 	font-family: "HelveticaNeue-Light";
 }
 
@@ -29,18 +28,17 @@ body {
 
 
 .wrapper h1 {
-
   font-size: 3em;
   text-shadow: 0 0 20px rgba(0, 0, 0, .4);
 
 }
 
-
 .wrapper {
-  background-image: url('http://37.media.tumblr.com/cfd678f87f35e66de5aa4c0253de89d7/tumblr_mqb7ft3YC41qbtlogo1_1280.jpg');
+  background-image: url("../images/ds_iceme.jpg");
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
   height: 800px;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 130px;
   margin-bottom: 70px;
   text-align: center;
   color: white;
@@ -78,4 +76,35 @@ body {
 
 .footersite a {
   font-size: 24px;
+}
 
+
+.modal-title {
+  font-size: 1.2em;
+  font-color: grey;
+  font-family: "HelveticaNeue-Light";
+}
+
+
+.modal-body {
+  font-size: 1em;
+  font-color: grey;
+  font-family: "HelveticaNeue-Light";
+}
+
+.modal-dialog {
+  width: 450px;
+}
+
+.bfh-phone {
+  width: 120px;
+}
+
+.parfums {
+  padding-top: 20px;
+
+}
+
+.radio-inline {
+  font-weight: thin;
+}
