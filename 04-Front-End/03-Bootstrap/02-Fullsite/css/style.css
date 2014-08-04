@@ -1,5 +1,6 @@
 .container {
-	font-family: "HelveticaNeue-Light";
+	font-family: "Futura" "sans ms";
+
 }
 
 body {
@@ -30,7 +31,6 @@ body {
 .wrapper h1 {
   font-size: 3em;
   text-shadow: 0 0 20px rgba(0, 0, 0, .4);
-
 }
 
 .wrapper {
@@ -106,5 +106,5 @@ body {
 }
 
 .radio-inline {
-  font-weight: thin;
+  font-weight: normal;
 }
