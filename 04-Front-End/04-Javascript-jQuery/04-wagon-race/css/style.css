@@ -22,12 +22,25 @@ text-align: center;
 .finishline{
   position: absolute;
   content: url("../img/damieronset.gif");
-  width: 50px;
+  width: 70px;
   height: 100px;
   left: 1150;
   right: 100;
   top: 220;
   bottom: 0;
+}
+
+
+#victory {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  text-align: center;
+  padding-top: 50px;
+  color: white;
 }
 
 
