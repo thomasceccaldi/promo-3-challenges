@@ -1,32 +1,38 @@
-
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Wagon race</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
+    <title>JAJAX Wagon Race</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
 
-</head>
+  <body>
+     <input type="submit" id="submit2" value="START A NEW GAME" />
+    <form id="form">
+      <input id="player1" type="text" placeholder="player1" />
+      <input id="player2" type="text" placeholder="player2" />
+      <input id="rows_number" type="text" placeholder="grid size" />
+       <input type="submit" id="submit" value="GO" />
+    </form>
 
+      <div class="players">
+      <div id="player1_hint"></div>
+      <div id="player2_hint"></div>
+    </div>
 
-<body>
+    <table class="racer_table">
+      <tr id="player1_race">
+        <td class="active"></td>
+      </tr>
+      <tr id="player2_race">
+        <td class="active"></td>
+      </tr>
+    </table>
 
-  <table class="racer_table">
-    <tr id="player1_race">
-      <td></td>
-      <td class="active"></td>
-      <td></td>
-      <td></td>
-      ... etc ...
-    </tr>
-    <tr id="player2_race">
-      <td></td>
-      <td></td>
-      <td></td>
-      <td class="active"></td>
-      ... etc ...
-    </tr>
-  </table>
+    <button id="restart">Restart</button>
 
-</body>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/game.js"></script>
+  </body>
 </html>

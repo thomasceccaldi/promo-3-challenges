@@ -1,0 +1,83 @@
+#submit2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 0px 0px 2px 2px;
+  border: none;
+  color: white;
+  background-color: #E6E6FA;
+  padding-top:5px;
+  outline: none;
+  width: 256px;
+}
+
+
+#submit{
+  border-radius: 0px 0px 2px 2px;
+  border: none;
+  color: white;
+  background-color: #E6E6FA;
+  padding-top:5px;
+  outline: none;
+  width: 256px;
+}
+
+input{
+  width: 250px;
+  text-align: center;
+  outline: none;
+
+}
+
+form{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 240px;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  width: 250px;
+  outline: none;
+  z-index: 2;
+}
+
+.racer_table td{
+  text-align: center;
+  background-color: #E6E6FA;
+  height: 20px;
+  width: 20px;
+}
+
+
+.racer_table .active{
+  background-color: red;
+}
+table{
+  z-index: 1;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 150px;
+  width: 60%;
+  outline: none;
+}
+
+#restart{
+z-index: 10;
+position: absolute;
+margin: auto;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+height: 150px;
+width: 60%;
+outline: none;
+background-color: gray;
+}
+
+
